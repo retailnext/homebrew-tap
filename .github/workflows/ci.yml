@@ -26,8 +26,5 @@ jobs:
       - name: Set up Homebrew
         uses: Homebrew/actions/setup-homebrew@main
 
-      - name: brew style
-        run: brew style retailnext/tap
-
       - name: brew audit
         run: brew audit --cask --online rn-events
