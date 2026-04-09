@@ -26,11 +26,8 @@ jobs:
       - name: Set up Homebrew
         uses: Homebrew/actions/setup-homebrew@main
 
-      - name: Check out repository
-        uses: actions/checkout@v4
-
       - name: brew style
-        run: brew style --casks Casks/
+        run: brew style retailnext/tap
 
       - name: brew audit
-        run: brew audit --cask --online Casks/rn-events.rb
+        run: brew audit --cask --online rn-events
