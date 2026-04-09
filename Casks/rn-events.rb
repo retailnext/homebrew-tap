@@ -4,29 +4,33 @@ cask "rn-events" do
 
   on_macos do
     on_intel do
-      url "https://storage.googleapis.com/rn-events-72daf14f/v#{version}/rn-events_Darwin_x86_64.tar.gz"
+      url "https://storage.googleapis.com/rn-events-72daf14f/v#{version}/rn-events_Darwin_x86_64.tar.gz",
+          verified: "storage.googleapis.com/rn-events-72daf14f/"
       sha256 "c6e5e38e00615a1385de1c05fdd6def23c674f4d1072a1806e1b50b0f33eaeed"
     end
     on_arm do
-      url "https://storage.googleapis.com/rn-events-72daf14f/v#{version}/rn-events_Darwin_arm64.tar.gz"
+      url "https://storage.googleapis.com/rn-events-72daf14f/v#{version}/rn-events_Darwin_arm64.tar.gz",
+          verified: "storage.googleapis.com/rn-events-72daf14f/"
       sha256 "83a262835059c45f87d9e47ab4cac98551f4b9ed91484a21081c69648949565a"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://storage.googleapis.com/rn-events-72daf14f/v#{version}/rn-events_Linux_x86_64.tar.gz"
+      url "https://storage.googleapis.com/rn-events-72daf14f/v#{version}/rn-events_Linux_x86_64.tar.gz",
+          verified: "storage.googleapis.com/rn-events-72daf14f/"
       sha256 "4800c2876c8be668b94e23d8a3473e5407c883dfcd9c8619aa33229846fa56cf"
     end
     on_arm do
-      url "https://storage.googleapis.com/rn-events-72daf14f/v#{version}/rn-events_Linux_arm64.tar.gz"
+      url "https://storage.googleapis.com/rn-events-72daf14f/v#{version}/rn-events_Linux_arm64.tar.gz",
+          verified: "storage.googleapis.com/rn-events-72daf14f/"
       sha256 "76f9c60bbac867af923b1ad0943dbf878315d383e9caf433bf1f04718ab477de"
     end
   end
 
   name "rn-events"
   desc "RetailNext events CLI"
-  homepage "https://retailnext.net"
+  homepage "https://retailnext.net/"
 
   livecheck do
     skip "Auto-generated on release."
